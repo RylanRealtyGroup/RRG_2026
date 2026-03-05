@@ -828,3 +828,27 @@ input:focus, textarea:focus { border-color: rgba(47, 110, 166, 0.55); }
 @media (max-width: 420px){
   .brand-logo{ max-width: 210px; }
 }
+
+/* Desktop: give hero text breathing room on the left */
+@media (min-width: 861px){
+  .hero-content{
+    padding: 72px 0;
+  }
+
+  /* move panel slightly left, keep content padded */
+  .hero-content::before{
+    left: -10px;
+  }
+
+  /* add a consistent inside gutter */
+  .hero-content > *{
+    padding-left: 28px;
+    padding-right: 18px;
+  }
+
+  /* but DON'T pad the full-width highlights grid too much */
+  .hero-highlights{
+    padding-left: 28px;
+    padding-right: 18px;
+  }
+}
