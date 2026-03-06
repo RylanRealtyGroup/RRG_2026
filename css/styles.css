@@ -436,7 +436,8 @@ a { color: inherit; text-decoration: none; }
 /* =========================
    Listings
 ========================= */
-.listing-grid {
+/* 
+  .listing-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
@@ -453,6 +454,36 @@ a { color: inherit; text-decoration: none; }
 .listing-price { font-size: 18px; font-weight: 800; }
 .listing-address { margin-top: 6px; font-weight: 650; }
 .listing-meta { margin: 6px 0 14px 0; color: var(--muted); font-size: 14px; }
+*/
+
+.our-listings{
+  background: var(--surface-2);
+}
+
+.listings-heading{
+  text-align:center;
+  max-width:720px;
+  margin:0 auto 2rem;
+}
+
+.listings-heading .section-intro{
+  color:var(--muted);
+}
+
+/* IDX container */
+
+#idx-our-listings{
+  margin-top:2rem;
+}
+
+/* Force IDX cards to look better inside your site */
+
+#idx-our-listings .idx-listing,
+#idx-our-listings .idx-results-card{
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
 
 /* =========================
    Team
