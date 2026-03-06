@@ -1275,3 +1275,33 @@ textarea:focus {
     max-width: 210px;
   }
 }
+
+
+/* =========================
+   Footer - Mobile
+========================= */
+
+@media (max-width: 720px) {
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+  }
+
+  .footer-legal {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+}
