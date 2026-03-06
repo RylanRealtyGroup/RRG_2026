@@ -456,6 +456,9 @@ a { color: inherit; text-decoration: none; }
 .idx-listings-shell {
   padding: 0;
   margin: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
 .our-listings .center {
