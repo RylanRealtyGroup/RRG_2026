@@ -461,6 +461,24 @@ a { color: inherit; text-decoration: none; }
   margin:0 auto;
 }
 
+.idx-listings-shell {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.idx-listings-shell .showcaseContainer {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.idx-listings-shell .showcaseHeader {
+  display: none !important;
+}
+
 /* =========================
    Team
 ========================= */
