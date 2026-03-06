@@ -452,20 +452,15 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
 }
 
-.idx-listings-shell{
-  padding:10px;
-}
-
-/* IDX cards spacing */
-.idx-listings-shell .idx-widget{
-  margin:0 auto;
-}
-
 .idx-listings-shell {
   padding: 0;
   background: transparent;
   border: 0;
   box-shadow: none;
+}
+
+.idx-listings-shell .idx-widget {
+  margin: 0 auto;
 }
 
 .idx-listings-shell .showcaseContainer {
@@ -739,10 +734,7 @@ input:focus, textarea:focus { border-color: rgba(47, 110, 166, 0.55); }
     border-top: none;
     padding-top: 0;
   }
-
-  .idx-listings-embed iframe {
-    min-height: 1800px;
-  }
+ 
 }
 
 @media (max-width: 420px) {
