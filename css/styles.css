@@ -934,7 +934,13 @@ input:focus, textarea:focus { border-color: rgba(47, 110, 166, 0.55); }
   display: grid;
   grid-template-columns: 1fr 250px;
   gap: 18px;
-  align-items: center;
+  align-items: start;
+}
+
+.office-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .office-map {
