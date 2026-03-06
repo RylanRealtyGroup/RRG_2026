@@ -731,7 +731,6 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-
   max-width: 960px;
   margin: 0 auto;
 }
@@ -989,15 +988,15 @@ textarea:focus {
    Footer
 ========================= */
 .site-footer {
-  padding: 34px 0;
+  padding: 40px 0;
   background: var(--surface-2);
   border-top: 1px solid var(--line);
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 0.9fr 0.7fr;
-  gap: 14px;
+  grid-template-columns: 1.6fr 1fr 1fr 0.9fr 0.95fr;
+  gap: 24px;
   align-items: start;
 }
 
@@ -1017,14 +1016,13 @@ textarea:focus {
   color: var(--text);
 }
 
-.footer-logos img {
-  width: 180px;
-  height: auto;
-  display: block;
+.footer-legal {
+  display: grid;
+  gap: 10px;
 }
 
-.footer-legal {
-  justify-self: end;
+.footer-legal a {
+  font-size: 13px;
 }
 
 .footer-social {
@@ -1045,7 +1043,15 @@ textarea:focus {
 }
 
 .footer-logos {
-  margin-top: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-logos img {
+  width: 165px;
+  height: auto;
+  display: block;
 }
 
 /* =========================
@@ -1115,13 +1121,8 @@ textarea:focus {
   .team-extra-grid,
   .team-card-large,
   .contact-page-grid,
-  .contact-grid,
-  .footer-grid {
+  .contact-grid {
     grid-template-columns: 1fr;
-  }
-
-  .footer-legal {
-    justify-self: start;
   }
 }
 
@@ -1243,6 +1244,33 @@ textarea:focus {
   .office-map {
     height: 220px;
   }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+  }
+
+  .footer-legal {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+  }
+
+  .footer-logos {
+    justify-content: center;
+    margin-top: 6px;
+  }
+
+  .footer-logos img {
+    width: 130px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1278,34 +1306,4 @@ textarea:focus {
   .brand-logo {
     max-width: 210px;
   }
-}
-
-
-/* =========================
-   Footer - Mobile
-========================= */
-
-@media (max-width: 720px) {
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .footer-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 20px;
-  }
-
-  .footer-legal {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .footer-logos {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
 }
