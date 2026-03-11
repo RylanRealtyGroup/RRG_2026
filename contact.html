@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Us | Rylan Realty Group</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
 
@@ -81,7 +82,7 @@
         <h3>Send a message</h3>
         <p class="muted">Have a question or ready to get started? Send us a message and our team will reach out soon.</p>
       
-        <form id="contactForm" action="https://formspree.io/f/xyknwpln" method="POST">
+        <form id="contactForm" action="https://formspree.io/f/xreyqazn" method="POST">
           <label>
             Name*:
             <input type="text" name="name" placeholder="Full name" required>
@@ -101,7 +102,10 @@
             Message:
             <textarea name="message" rows="5" placeholder="How can we help?"></textarea>
           </label>
-      
+
+          <!-- Captcha -->
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAACpXFGpFj6oKbZj1"></div>
+          
           <button class="btn btn-primary" type="submit">
             Send message
           </button>
