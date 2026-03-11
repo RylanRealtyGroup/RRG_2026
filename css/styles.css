@@ -1307,3 +1307,17 @@ textarea:focus {
     max-width: 210px;
   }
 }
+
+.form-status {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.form-status.is-success {
+  color: #166534;
+}
+
+.form-status.is-error {
+  color: #b91c1c;
+}
