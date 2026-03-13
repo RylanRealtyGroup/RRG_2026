@@ -228,6 +228,7 @@ a {
   position: relative;
   width: min(1100px, 100%);
   padding: 72px 0;
+  overflow: hidden;
 }
 
 .hero-content::before {
@@ -269,18 +270,22 @@ a {
 }
 
 .hero-services {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   margin: 0 0 22px;
-  max-width: 860px;
-  font-size: clamp(32px, 4.2vw, 60px);
-  line-height: 1.02;
+  max-width: 920px;
+  font-size: clamp(34px, 4.6vw, 64px);
+  line-height: 0.98;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #245A86;
-  text-wrap: balance;
-  word-break: normal;
-  overflow-wrap: normal;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.hero-services span {
+  display: block;
 }
 
 .hero-title {
@@ -1127,42 +1132,43 @@ textarea:focus {
 
 @media (max-width: 720px) {
  .hero-content {
-  padding: 36px 0 48px;
-}
-
-.hero-content::before {
-  left: -6px;
-  right: -6px;
-  width: auto;
-  top: 18px;
-  bottom: 18px;
-  border-radius: 20px;
-}
-
-.hero-content > * {
-  padding-left: 24px;
-  padding-right: 20px;
-}
-
-.hero-location {
-  margin-bottom: 8px;
-  font-size: clamp(15px, 3.6vw, 20px);
-  letter-spacing: 0.14em;
-  line-height: 1.15;
-}
-
-.hero-services {
-  margin-bottom: 16px;
-  max-width: 100%;
-  font-size: clamp(26px, 7.6vw, 40px);
-  line-height: 1.06;
-  letter-spacing: 0.04em;
-}
-
-.hero-title {
-  font-size: clamp(30px, 9vw, 42px);
-  line-height: 1.1;
-}
+    padding: 36px 0 48px;
+  }
+  
+  .hero-content::before {
+    left: -6px;
+    right: -6px;
+    width: auto;
+    top: 18px;
+    bottom: 18px;
+    border-radius: 20px;
+  }
+  
+  .hero-content > * {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
+  .hero-location {
+    margin-bottom: 8px;
+    font-size: clamp(15px, 3.6vw, 20px);
+    letter-spacing: 0.14em;
+    line-height: 1.15;
+  }
+  
+  .hero-services {
+    gap: 2px;
+    margin-bottom: 16px;
+    max-width: 100%;
+    font-size: clamp(24px, 7vw, 36px);
+    line-height: 1.02;
+    letter-spacing: 0.03em;
+  }
+  
+  .hero-title {
+    font-size: clamp(28px, 8.6vw, 42px);
+    line-height: 1.08;
+  }
 }
 
 /* =========================
